@@ -78,7 +78,7 @@ def create_site():
 
 
 def main():
-    create_coffe_map_html((define_your_coordinate()))
+    create_coffe_map_html(define_your_coordinate())
     app = Flask(__name__)
     app.add_url_rule('/', 'hello', create_site)
     app.run('0.0.0.0')
